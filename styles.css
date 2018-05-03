@@ -1,0 +1,405 @@
+body {
+  font-family: 'Exo', sans-serif;
+  font-weight: normal;
+  background-color: #1a1a1a;
+  margin: 0;
+}
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: min-height 0.3s;
+
+}
+.header__inner {
+  background-color: #232323;
+  width: 100%;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header__logo {
+  height:70px;
+  float: left;
+}
+.header__name {
+  font-size: 34px;
+  color: #80BFB4;
+  margin: 1px 2px;
+  display: inline-block;
+  text-decoration: none;
+}
+.header__job {
+  font-size: 18px;
+  color: #F2E6D0;
+  position: absolute;
+  left: 95px;
+  top: 28px;
+  display: inline-block;
+}
+.nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  /* does it work? */
+  width: 100%;
+  top: 10px;
+  left: 500px;
+}
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  float: left;
+}
+.nav__item a {
+  display: inline-block;
+  color: #F2E6D0;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  transition: color .2s, border-bottom .2s;
+}
+.nav__item a:hover, a:focus {
+  color: #80BFB4;
+  border-bottom: 2px solid #80BFB4;
+}
+
+/* !important how to make it also active when I am on this specific section of the page? */
+.nav .nav__list li.active > a {
+  color: #80BFB4;
+  border-bottom: 2px solid #80BFB4;
+}
+.banner {
+  height: 100%;
+  height: 637px;
+}
+#homeBanner {
+  background: center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/mee.jpg);
+  height: 637px;
+  overflow: hidden;
+  background-size: cover;
+}
+#bannerText {
+  text-align: left;
+  position: relative;
+  padding-left: 18px;
+  opacity: 1;
+  margin-top: 200px;
+  color: #F2E6D0;
+  text-shadow: 2px 2px 8px #000000;
+}
+#bannerText h1 {
+  font-size: 55px;
+}
+#bannerText p {
+  font-size: 25px;
+}
+#downButton {
+  background: url(images/arrow.png) center center no-repeat;
+  background-size: 70px 37px;
+  width: 80px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 100px;
+  z-index: 1;
+  display: block;
+  text-align: center;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+#downButton:hover {
+  background-color: #80BFB4;
+  height: 80px;
+}
+
+
+
+
+
+.block0 {
+  background-color: #F2E6D0;
+  width: 100%;
+  height: 650px;
+  margin-top: 20px;
+}
+.block0 h1 {
+  font-size: 45px;
+  color: inherit;
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.block0 p {
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  padding-top: 40px;
+  max-width: 900px;
+}
+.highlight {
+  color: #80BFB4;
+  text-decoration: none;
+  font-weight: 900;
+}
+.block0 h2, .block1 h2, .block2 h2 {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.block0 h4, .block1 h4, .block2 h4 {
+  font-size: 26px;
+  font-weight: 100;
+  color: inherit;
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+}
+
+
+
+
+.block1 {
+  background-color: #F2E6D0;
+  width: 100%;
+  height: 650px;
+  margin-top: 20px;
+}
+.column {
+  font-size: 50px;
+  color: #80BFB4;
+  text-align: center;
+  display: inline-block;
+  width: 30.66666667%;
+  float: left;
+  position: relative;
+  margin-left: 4%;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+.column:first-child {
+  margin-left: 0;
+}
+.shape {
+  display: inline-block;
+  position: relative;
+}
+.shapetitle {
+  display: block;
+  position: relative;
+}
+.column h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1a1a1a;
+  padding: 0;
+  margin: 0;
+}
+.column p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #232323;
+  max-width: 250px;
+  min-width: 200px;
+  position: relative;
+  left: 60px;
+}
+
+
+
+
+
+
+.block2 {
+  background-color: #F2E6D0;
+  width: 100%;
+  height: 650px;
+  margin-top: 20px;
+}
+.pj {
+  transition: transform .5s;
+  width: 30.666667%;
+  display: inline-block;
+}
+.pj > a,h3,h4 {
+  color: #232323;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0;
+  text-align: center;
+}
+.pj h3 {
+  font-weight: bold;
+  position: relative;
+  left: 40px;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+.pj h4 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  position: relative;
+  left: 40px;
+}
+.thumbnail {
+  width: 320px;
+  height: 240px;
+  border: 5px solid #80BFB4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 8px;
+  position: relative;
+  left: 60px;
+  transition: transform .5s;
+}
+.thumbnail:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.block3 {
+  background-color: #80BFB4;
+  width: 100%;
+  height: 350px;
+  margin-top: 20px;
+}
+.block3 h2 {
+  font-size: 35px;
+  color: #1a1a1a;
+  text-align: center;
+  padding-top: 60px;
+}
+.block3 > h4 {
+  font-size: 26px;
+  font-weight: 100;
+  color: inherit;
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+}
+
+footer {
+  background-color: #232323;
+  width: 100%;
+  min-height: 200px;
+  height: 250px;
+}
+
+.footer__logo {
+  width: 150px;;
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.made-by-me {
+  color: #80BFB4;
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+  right: 8px;
+}
+
+
+
+
+.soc {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  right: 28px;
+  bottom: 20px;
+}
+.soc li {
+  display: inline-block;
+  margin: 8px;
+}
+.soc a, .soc svg {
+  display: block;
+}
+.soc a {
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+.soc svg {
+  height: 100%;
+  width: 100%;
+}
+.icon-4:hover, .icon-8:hover, .icon-10:hover, .icon-13:hover, .icon-17:hover {
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+.icon-4 {
+  color: #80BFB4;
+  fill: #80BFB4;
+}
+.icon-4:hover {
+  background: #80BFB4;
+}
+.icon-8 {
+  color: #80BFB4;
+  fill: #80BFB4;
+}
+.icon-8:hover {
+  background: #80BFB4;
+}
+.icon-10 {
+  color: #80BFB4;
+  fill: #80BFB4;
+}
+.icon-10:hover {
+  background: #80BFB4;
+}
+.icon-13 {
+  color: #80BFB4;
+  fill: #80BFB4;
+}
+.icon-13:hover {
+  background: #80BFB4;
+}
+.icon-17 {
+  color: #80BFB4;
+  fill: #80BFB4;
+}
+.icon-17:hover {
+  background: #80BFB4;
+}

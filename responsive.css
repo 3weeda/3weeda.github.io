@@ -1,0 +1,434 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__menu {
+  display: none;
+}
+
+@media screen and (min-width:1200px) {
+  body, header {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width:1199px) {
+  .nav__item a{
+    padding: 14px 30px;
+  }
+}
+@media screen and (max-width:1170px) {
+  .column p {
+    left: 40px;
+  }
+}
+@media screen and (max-width:1120px) {
+  .nav__item a{
+    padding: 14px 20px;
+  }
+  #bannerText h1 {
+    font-size: 45px;
+  }
+  .block0 h1 {
+    font-size: 35px;
+  }
+  .block0 p {
+    font-size: 20px;
+  }
+  .block1 h2, .block2 h2 {
+    font-size: 30px;
+  }
+  .block1 h4, .block2 h4 {
+    font-size: 20px;
+  }
+  .column p {
+    font-size: 14px;
+  }
+  .thumbnail {
+    width: 288px;
+    height: 216px;
+  }
+  .secondPj, .thirdPj {
+    position: relative;
+    right: 10px;
+  }
+  .firstPj {
+    position: relative;
+    right: 10px;
+  }
+  .pj h3, .pj h4 {
+    font-size: 16px;
+  }
+  .block3 h2 {
+    font-size: 25px;
+  }
+  .block3 h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:1050px) {
+  .column p {
+    left: 30px;
+  }
+}
+@media screen and (max-width:1020px) {
+  .nav__item a{
+    padding: 10px 10px;
+  }
+  .header__inner, .header__logo {
+    height: 60px;
+  }
+  .header__name {
+    font-size: 30px;
+  }
+  .header__job {
+    font-size: 15px;
+    left: 80px;
+    top: 25px;
+  }
+  #homeBanner {
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/mee_1020.jpg);
+  }
+  #bannerText  {
+    bottom: 70px;
+  }
+  .thumbnail {
+    width: 256px;
+    height: 192px;
+  }
+  .secondPj, .thirdPj {
+    position: relative;
+    right: 10px;
+  }
+  .firstPj {
+    position: relative;
+    right: 10px;
+  }
+  .pj h3, .pj h4 {
+    font-size: 14px;
+  }
+  .block3 {
+    height: 250px;
+  }
+  .block3 h2 {
+    font-size: 22px;
+  }
+  .block3 > h4 {
+    font-size: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width:1000px) {
+  .column p {
+    left: 20px;
+  }
+}
+@media screen and (max-width:950px) {
+  .block0 p {
+    font-size: 20px;
+    max-width: 700px;
+  }
+  .column p {
+    left: 10px;
+  }
+}
+@media screen and (max-width:920px) {
+  #bannerText h1 {
+    font-size: 35px;
+  }
+  .block0 h1 {
+    font-size: 30px;
+  }
+  .block0 p {
+    font-size: 18px;
+  }
+  .nav__list{
+    left: 400px;
+  }
+  .block1 h2 {
+    font-size: 26px;
+  }
+  .block1 h4 {
+    font-size: 18px;
+  }
+  .shape {
+
+  }
+  .thumbnail {
+    width: 224px;
+    height: 168px;
+  }
+  .secondPj, .thirdPj {
+    position: relative;
+    right: 10px;
+  }
+  .firstPj {
+    position: relative;
+    right: 10px;
+  }
+}
+@media screen and (max-width:850px) {
+  .column {
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width:820px) {
+  .thumbnail {
+    width: 192px;
+    height: 144px;
+  }
+  .secondPj, .thirdPj {
+    position: relative;
+    right: 20px;
+  }
+  .firstPj {
+    position: relative;
+    right: 20px;
+  }
+  .block2 {
+    height: 600px;
+  }
+  .nav__list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #232323;
+  }
+  .nav {
+    z-index: 10;
+    width: 300px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    /* This trasform moves the drawer off canvas. */
+    transform: translate(-600px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #1a1a1a;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  .header__menu svg {
+    width: 45px;
+    position: relative;
+    bottom: 10px;
+    fill: #80BFB4;
+    cursor: pointer;
+  }
+
+
+}
+@media screen and (max-width:800px) {
+  .column {
+    margin-left: 1%;
+  }
+  .column:first-child {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width:780px) {
+#homeBanner {
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/mee_780.jpg);
+}
+@media screen and (max-width:768px) {
+  .shape, .shapetitle {
+    left: 10px;
+  }
+}
+@media screen and (max-width:690px) {
+  .block0 {
+    height: 600px;
+  }
+  .block0 h1 {
+    font-size: 25px;
+  }
+  .block0 p {
+    font-size: 18px;
+    max-width: 600px;
+  }
+  .block1 {
+    height: 1100px;
+  }
+  #bannerText h1 {
+    font-size: 30px;
+  }
+  #bannerText p {
+    font-size: 20px;
+  }
+  .column {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    margin: 0;
+    position: relative;
+    right: 18px;
+  }
+  .column p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    max-width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .block2 {
+    height: 1600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .headline {
+    display: block;
+  }
+  .pj h3,h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .thumbnail {
+    width: 416px;
+    height: 312px;
+    left: 140px;
+  }
+  .firstPj {
+    order: 2;
+    width:100%;
+  }
+  .secondPj {
+    order: 1;
+    width: 100%;
+  }
+  .thirdPj {
+      order: 0;
+      width: 100%
+  }
+}
+
+@media screen and (max-width:568px) {
+  .thumbnail {
+    left: 80px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width:500px) {
+  .block2 {
+    height: 1400px;
+  }
+  .thumbnail {
+    width: 320px;
+    height: 240px;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  #homeBanner {
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/mee_500.jpg);
+  }
+}
+@media screen and (max-width:420px) {
+  .header__inner, .header__logo {
+    height: 50px;
+  }
+  .header__name {
+    font-size: 22px;
+  }
+  .header__job {
+    font-size: 12px;
+    left: 65px;
+    top: 18px;
+  }
+  .header__menu svg {
+    width: 35px;
+  }
+  .nav {
+    top: 50px;
+  }
+  #bannerText h1 {
+    font-size: 26px;
+  }
+  #bannerText p {
+    font-size: 18px;
+  }
+  .block2 {
+    height: 1300px;
+  }
+  .thumbnail {
+    width: 280px;
+    height: 210px;
+    margin-bottom: 0;
+    margin-right: 30px;
+
+  }
+
+  .block3 h2 {
+    font-size: 20px;
+  }
+  .block3 h4 {
+    font-size: 17px;
+  }
+  .footer__logo {
+    width: 180px;
+    padding-top: 0;
+  }
+  .made-by-me {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:360px) {
+  .block0 {
+    height: 650px;
+  }
+  .block0 h1 {
+    font-size: 22px;
+  }
+  .block0 p {
+    font-size: 16px;
+  }
+  .block1 h2 {
+    font-size: 20px;
+  }
+  .block1 h4 {
+    font-size: 16px;
+    padding-top: 5px;
+  }
+  .block2 {
+    height: 1200px;
+  }
+  .thumbnail {
+    width: 260px;
+    height: 180px;
+    margin: 0;
+    left: 60px;
+  }
+  .pj h3, .pj h4 {
+    font-size: 15px;
+    text-align: center;
+    left: 20px;
+  }
+  #homeBanner {
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/mee_360.jpg);
+  }
+}
