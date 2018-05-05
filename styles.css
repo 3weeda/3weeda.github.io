@@ -247,6 +247,8 @@ header {
 .pj {
   transition: transform .5s;
   width: 30.666667%;
+  margin-left: auto;
+  margin-right: auto;
   display: inline-block;
 }
 .pj > a,h3,h4 {
@@ -273,7 +275,7 @@ header {
 .thumbnail {
   width: 320px;
   height: 240px;
-  border: 5px solid #80BFB4;
+  border: 3px solid #80BFB4;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 8px;
