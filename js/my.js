@@ -17,19 +17,19 @@ $(document).ready(function () {
         }
         else if (scroll >= objectPosition2 && scroll < objectPosition3) {
             $('.nav .nav__list').find('li.active').removeClass('active');
-            $('#about').addClass("active");
+            $('#abouttt').addClass("active");
         }
         else if (scroll >= objectPosition3 && scroll < objectPosition4) {
             $('.nav .nav__list').find('li.active').removeClass('active');
-            $('#expertise').addClass("active");
+            $('#expertiseee').addClass("active");
         }
         else if (scroll >= objectPosition4 && scroll < objectPosition5) {
             $('.nav .nav__list').find('li.active').removeClass('active');
-            $('#projects').addClass("active");
+            $('#projectsss').addClass("active");
         }
         else if (scroll >= objectPosition5) {
             $('.nav .nav__list').find('li.active').removeClass('active');
-            $('#contact').addClass("active");
+            $('#contacttt').addClass("active");
         }
     });
 });
