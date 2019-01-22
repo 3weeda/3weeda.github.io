@@ -93,10 +93,6 @@
     left: 80px;
     top: 25px;
   }
-  #homeBanner {
-    background-repeat: no-repeat;
-    /* background: url(images/1000b.jpg); */
-  }
   #bannerText  {
     bottom: 70px;
   }
@@ -220,7 +216,7 @@
 }
 @media screen and (max-width:780px) {
 #homeBanner {
-  background: url(images/780b.jpg);
+  background: url(https://i.imgur.com/fwVNJB5.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -300,7 +296,7 @@
     height: 450px;
   }
   #homeBanner {
-    background:url(images/500b.jpg);
+    background:url(https://i.imgur.com/yxNC1VC.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;  
