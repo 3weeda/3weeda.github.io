@@ -188,6 +188,10 @@
     color: #80BFB4;
     border-bottom: none;
   }
+  .nav .nav__list li.active > a {
+    color: #80BFB4;
+    border-bottom: none;
+  }
   .header__menu {
     display: inline-block;
     position: absolute;
