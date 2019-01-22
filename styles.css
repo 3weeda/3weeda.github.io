@@ -1,3 +1,9 @@
+*::selection {
+  background: #80BFB4;
+}
+::-moz-selection {
+  background: #80BFB4;
+}
 body {
   font-family: 'Exo', sans-serif;
   font-weight: normal;
@@ -90,9 +96,11 @@ header {
   height: 637px;
 }
 #homeBanner {
-  background: center center no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/mee.jpg);
-  height: 637px;
+  background: url(images/1200b.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 630px;
   overflow: hidden;
   background-size: cover;
   z-index: -1;
@@ -113,10 +121,13 @@ header {
   font-size: 25px;
 }
 #downButton {
-  background: url(images/arrow.png) center center no-repeat;
+  background: url(images/arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-size: 70px 37px;
-  width: 80px;
-  height: 50px;
+  width: 40px;
+  height: 60px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -131,8 +142,8 @@ header {
   border-radius: 20px;
 }
 #downButton:hover {
-  background-color: #80BFB4;
-  height: 80px;
+  fill: #80BFB4;
+  top: 120px;
 }
 
 
@@ -165,20 +176,20 @@ header {
   max-width: 840px;
   line-height: 32px;
 }
+.colored {
+  color: #80BFB4;
+}
 .highlight {
   color: #80BFB4;
   text-decoration: none;
-  font-weight: 900;
 }
 .highlight:after {
   content: '🡢';
   position: relative;
-  opacity: 0;
-  right: 2px;
+  right: -2px;
   transition: 0.4s;
 }
 .highlight:hover:after {
-  opacity: 1;
   right: -10px;
 }
 
@@ -264,12 +275,15 @@ header {
   margin-bottom: 60px;
 }
 .projects {
-  width: 100%;
+  max-width: 1100px;
   display: flex;
-  flex-wrap: wrap !important;
+  flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+.projects > * {
+  margin: 10px;
 }
 .pj {
   width: 30%;
@@ -282,6 +296,14 @@ header {
   color: #232323;
   font-size: 20px;
   text-decoration: none;
+}
+.pj > a:link,a:hover,a:active,a:visited,a:focus,img {
+  text-decoration: none;
+  border: 0 none !important;
+  outline:none;
+  border-width: 0px;
+  outline-width:0px;
+  border-bottom: none;
 }
 .pj h3 {
   font-weight: bold;
@@ -299,13 +321,13 @@ header {
 .thumbnail {
   width: 320px;
   height: 240px;
-  border: 2px solid #80BFB4;
   user-select: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 8px;
   transition: transform .4s;
   transition: .4s ease;
   filter: brightness(60%);
+  text-decoration: none; 
 }
 .thumbnail:hover {
   -ms-transform: scale(1.1); /* IE 9 */
@@ -327,12 +349,14 @@ header {
   padding-top: 60px;
 }
 .block3 > h4 {
+  width: 70%;
   font-size: 26px;
   font-weight: 100;
   color: inherit;
   text-align: center;
-  position: relative;
-  bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -344,7 +368,6 @@ footer {
 
 .footer__logo {
   width: 150px;;
-  padding-top: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -352,22 +375,19 @@ footer {
 .made-by-me {
   color: #80BFB4;
   text-align: center;
-  position: relative;
-  bottom: 20px;
-  right: 8px;
+  margin-top: 0;
 }
-
-
-
-
+.social {
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+}
 .soc {
   font-size: 0;
   list-style: none;
-  margin: 0;
-  text-align: center;
-  position: relative;
-  right: 28px;
-  bottom: 20px;
+  padding: 0;
 }
 .soc li {
   display: inline-block;
