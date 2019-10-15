@@ -1,16 +1,24 @@
 *::selection {
-  background: #80BFB4;
+  background: #80bfb4;
 }
 ::-moz-selection {
-  background: #80BFB4;
+  background: #80bfb4;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
   font-weight: normal;
   background-color: #1a1a1a;
   margin: 0;
 }
-header, nav, footer, section, article, div {
+header,
+nav,
+footer,
+section,
+article,
+div {
   box-sizing: border-box;
 }
 * {
@@ -23,7 +31,6 @@ header {
   margin-left: auto;
   margin-right: auto;
   transition: min-height 0.3s;
-
 }
 .header__inner {
   background-color: #232323;
@@ -37,12 +44,12 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .header__logo {
-  height:70px;
+  height: 70px;
   float: left;
 }
 .header__name {
   font-size: 34px;
-  color: #80BFB4;
+  color: #80bfb4;
   margin: 1px 2px;
   display: inline-block;
   text-decoration: none;
@@ -79,17 +86,18 @@ header {
   text-align: center;
   padding: 14px 40px;
   text-decoration: none;
-  transition: color .2s, border-bottom .2s;
+  transition: color 0.2s, border-bottom 0.2s;
 }
-.nav__item a:hover, a:focus {
-  color: #80BFB4;
-  border-bottom: 2px solid #80BFB4;
+.nav__item a:hover,
+a:focus {
+  color: #80bfb4;
+  border-bottom: 2px solid #80bfb4;
 }
 
 /* !important how to make it also active when I am on this specific section of the page? */
 .nav .nav__list li.active > a {
-  color: #80BFB4;
-  border-bottom: 2px solid #80BFB4;
+  color: #80bfb4;
+  border-bottom: 2px solid #80bfb4;
 }
 .banner {
   height: 100%;
@@ -142,13 +150,9 @@ header {
   border-radius: 20px;
 }
 #downButton:hover {
-  fill: #80BFB4;
+  fill: #80bfb4;
   top: 120px;
 }
-
-
-
-
 
 .block0 {
   background-color: white;
@@ -177,14 +181,14 @@ header {
   line-height: 32px;
 }
 .colored {
-  color: #80BFB4;
+  color: #80bfb4;
 }
 .highlight {
-  color: #80BFB4;
+  color: #80bfb4;
   text-decoration: none;
 }
 .highlight:after {
-  content: '🡢';
+  content: "🡢";
   position: relative;
   right: -2px;
   transition: 0.4s;
@@ -193,14 +197,18 @@ header {
   right: -10px;
 }
 
-.block0 h2, .block1 h2, .block2 h2 {
+.block0 h2,
+.block1 h2,
+.block2 h2 {
   font-size: 35px;
   text-align: center;
   padding-top: 80px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.block0 h4, .block1 h4, .block2 h4 {
+.block0 h4,
+.block1 h4,
+.block2 h4 {
   font-size: 26px;
   font-weight: 100;
   color: inherit;
@@ -208,9 +216,6 @@ header {
   position: relative;
   bottom: 20px;
 }
-
-
-
 
 .block1 {
   background-color: white;
@@ -221,7 +226,7 @@ header {
 }
 .column {
   font-size: 50px;
-  color: #80BFB4;
+  color: #80bfb4;
   text-align: center;
   display: inline-block;
   width: 30%;
@@ -261,7 +266,6 @@ header {
   left: 60px;
 }
 
-
 .block2 {
   background-color: white;
   width: 100%;
@@ -287,22 +291,29 @@ header {
 }
 .pj {
   width: 30%;
-  transition: transform .5s;
+  transition: transform 0.5s;
   margin-right: auto !important;
   margin-left: auto;
   margin-right: 20px;
 }
-.pj > a,h3,h4 {
+.pj > a,
+h3,
+h4 {
   color: #232323;
   font-size: 20px;
   text-decoration: none;
 }
-.pj > a:link,a:hover,a:active,a:visited,a:focus,img {
+.pj > a:link,
+a:hover,
+a:active,
+a:visited,
+a:focus,
+img {
   text-decoration: none;
   border: 0 none !important;
-  outline:none;
+  outline: none;
   border-width: 0px;
-  outline-width:0px;
+  outline-width: 0px;
   border-bottom: none;
 }
 .pj h3 {
@@ -316,7 +327,7 @@ header {
   margin-top: 0;
 }
 .pj h3:hover {
-  color: #80BFB4;
+  color: #80bfb4;
 }
 .thumbnail {
   width: 320px;
@@ -324,10 +335,10 @@ header {
   user-select: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 8px;
-  transition: transform .4s;
-  transition: .4s ease;
+  transition: transform 0.4s;
+  transition: 0.4s ease;
   filter: brightness(60%);
-  text-decoration: none; 
+  text-decoration: none;
 }
 .thumbnail:hover {
   -ms-transform: scale(1.1); /* IE 9 */
@@ -337,7 +348,7 @@ header {
 }
 
 .block3 {
-  background-color: #80BFB4;
+  background-color: #80bfb4;
   width: 100%;
   height: 350px;
   margin-top: 20px;
@@ -367,13 +378,13 @@ footer {
 }
 
 .footer__logo {
-  width: 150px;;
+  width: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 .made-by-me {
-  color: #80BFB4;
+  color: #80bfb4;
   text-align: center;
   margin-top: 0;
 }
@@ -393,7 +404,8 @@ footer {
   display: inline-block;
   margin: 8px;
 }
-.soc a, .soc svg {
+.soc a,
+.soc svg {
   display: block;
 }
 .soc a {
@@ -405,49 +417,54 @@ footer {
   height: 100%;
   width: 100%;
 }
-.icon-4:hover, .icon-8:hover, .icon-10:hover, .icon-13:hover, .icon-17:hover {
+.icon-4:hover,
+.icon-8:hover,
+.icon-10:hover,
+.icon-13:hover,
+.icon-17:hover {
   border-radius: 100%;
   color: #0e1a25;
   fill: #0e1a25;
   -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  transform: scale(1.25);
   -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
   transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out;
-  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out,
+    -webkit-transform 0.5s ease-out;
 }
 .icon-4 {
-  color: #80BFB4;
-  fill: #80BFB4;
+  color: #80bfb4;
+  fill: #80bfb4;
 }
 .icon-4:hover {
-  background: #80BFB4;
+  background: #80bfb4;
 }
 .icon-8 {
-  color: #80BFB4;
-  fill: #80BFB4;
+  color: #80bfb4;
+  fill: #80bfb4;
 }
 .icon-8:hover {
-  background: #80BFB4;
+  background: #80bfb4;
 }
 .icon-10 {
-  color: #80BFB4;
-  fill: #80BFB4;
+  color: #80bfb4;
+  fill: #80bfb4;
 }
 .icon-10:hover {
-  background: #80BFB4;
+  background: #80bfb4;
 }
 .icon-13 {
-  color: #80BFB4;
-  fill: #80BFB4;
+  color: #80bfb4;
+  fill: #80bfb4;
 }
 .icon-13:hover {
-  background: #80BFB4;
+  background: #80bfb4;
 }
 .icon-17 {
-  color: #80BFB4;
-  fill: #80BFB4;
+  color: #80bfb4;
+  fill: #80bfb4;
 }
 .icon-17:hover {
-  background: #80BFB4;
+  background: #80bfb4;
 }
