@@ -6,12 +6,12 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        var objectPosition2 = $(".block0").offset().top - 100;
-        var objectPosition3 = $(".block1").offset().top - 100;
-        var objectPosition4 = $(".block2").offset().top - 100;
-        var objectPosition5 = $(".block3").offset().top - 200;
+        var objectPosition2 = $(".block0").offset().top - 120;
+        var objectPosition3 = $(".block1").offset().top - 120;
+        var objectPosition4 = $(".block2").offset().top - 120;
+        var objectPosition5 = $(".block3").offset().top - 350;
 
-        if (scroll < 550) {
+        if (scroll < 500) {
             $('.nav .nav__list').find('li.active').removeClass('active');
             $('#homeee').addClass("active");
         }
